@@ -1,0 +1,22 @@
+dataset:
+  root: datasets/BOAS/ds005555-download
+  label_column: stage_hum
+  valid_labels: [0, 1, 2, 3, 4]
+  include_headband_stage_ai_feature: true
+
+model:
+  context_radius: 4
+  hidden_dim: 96
+  dropout: 0.25
+
+training:
+  seed: 20260403
+  batch_size: 64
+  epochs: 5
+  lr: 0.001
+  weight_decay: 0.0001
+  class_weight_power: 0.5
+  device: auto
+
+output:
+  path: outputs/boas_full_hybrid_ai_feature_fast_ctx4_seed3_metrics.json

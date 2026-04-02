@@ -1,0 +1,21 @@
+dataset:
+  root: datasets/BOAS/ds005555-download
+  label_column: stage_hum
+  valid_labels: [0, 1, 2, 3, 4]
+
+model:
+  context_radius: 2
+  hidden_dim: 128
+  dropout: 0.25
+
+training:
+  seed: 20260331
+  batch_size: 64
+  epochs: 40
+  lr: 0.001
+  weight_decay: 0.0001
+  class_weight_power: 0.5
+  device: auto
+
+output:
+  path: outputs/latest_smoke_metrics.json

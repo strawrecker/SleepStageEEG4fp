@@ -1,0 +1,40 @@
+# Python cache and build artifacts
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local datasets
+datasets/
+
+# Local experiment runtime state
+autoresearch-hook-context.json
+autoresearch-lessons.md
+autoresearch-state.json
+research-results.tsv
+
+# Optional local planning scratch
+task_plan.prev.md
+findings.prev.md
+progress.prev.md
+
+
+sources/
+outputs/
